@@ -1,6 +1,7 @@
-import { localStorageStore } from "@skeletonlabs/skeleton"
+import type { Readable, Writable } from "svelte/store"
 import { derived, writable } from "svelte/store"
-import type { Writable } from "svelte/store"
+
+import { localStorageStore } from "@skeletonlabs/skeleton"
 
 // Declare venue type for data import and manipulation
 export type Venue = {
@@ -53,25 +54,8 @@ export type Venue = {
 }
 
 export const dataStore: Writable<Array<Venue>> = localStorageStore("dataStore", [])
-
-function createCurrentItem(dataStore: Venue[]) {
-    const { subscribe, set, update } = writable(0)
-    return {
-        subscribe,
-        previous: (dataStore: Venue[]) => update((n: number) => {
-            if (n == 0) {
-                return dataStore.length - 1
-            } else {
-                return n - 1
-            }
-        }),
-        next: ($dataStore: Venue[]) => update((n: number) => {
-            return n + 1 % $dataStore.length
-        }),
-        reset: () => set(0)
-    }
-}
-export const currentItem = createCurrentItem(dataStore)
+export const currentIndex: Writable<number> = writable(0)
 
 export const itemCount = derived(dataStore, ($dataStore) => $dataStore.length)
 export const editCount = derived(dataStore, ($dataStore) => $dataStore.filter((v: Venue) => v.edited == true).length)
+export const currentVenue: Readable<Venue> = derived([dataStore, currentIndex], ([$dataStore, $currentIndex]) => {return $dataStore[$currentIndex]})
