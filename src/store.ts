@@ -39,9 +39,9 @@ export type Venue = {
     type: "restaurant" | "hotel" | "attraction"
     name: string,
     description: string,
-    "addr:housenumber": string,
-    "addr:street": string,
-    "addr:suburb": Suburb,
+    housenumber: string,
+    street: string,
+    suburb: Suburb,
     phone: string,
     website: string,
     cuisine?: Cuisine[],
