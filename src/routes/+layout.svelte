@@ -42,6 +42,6 @@
 			<LightSwitch class="flex-initial"/>
 		</div>
 	</AppBar>
-	<ProgressBar label="Progress Bar" value={$editCount} max={$itemCount} meter="bg-success-500" labelledby="${editCount}/${$itemCount}"/>
+	<ProgressBar label="Progress Bar" class="fixed" value={$editCount} max={$itemCount} meter="bg-success-500" labelledby="${editCount}/${$itemCount}"/>
 	<slot/>
 </AppShell>
