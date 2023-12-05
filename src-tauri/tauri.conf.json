@@ -32,7 +32,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "de.uni-heidelberg.cl.heidelkberg.annotator",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
