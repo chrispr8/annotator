@@ -1,11 +1,11 @@
 <script lang="ts">
-	import Dropzone from "$lib/Dropzone.svelte"
-	import VenueForm from "$lib/VenueForm.svelte"
-	import { dataStore } from "../store"
+    import FileDropzone from "$lib/FileDropzone.svelte"
+    import VenueForm from "$lib/VenueForm.svelte"
+    import { dataStore } from "../store"
 </script>
 
-{#if ($dataStore.length > 0)}
-	<VenueForm/>
+{#if $dataStore.length > 0}
+    <VenueForm />
 {:else}
-	<Dropzone/>
+    <FileDropzone />
 {/if}

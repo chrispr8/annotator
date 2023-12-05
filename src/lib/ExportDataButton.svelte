@@ -3,7 +3,7 @@
 
     function downloadJson() {
         const jsonString = JSON.stringify($dataStore, null, 2)
-        const blob = new Blob([jsonString], {type: "application/json"})
+        const blob = new Blob([jsonString], { type: "application/json" })
         const url = URL.createObjectURL(blob)
 
         const a = document.createElement("a")
@@ -16,8 +16,6 @@
     }
 </script>
 
-<button type="button"
-        class="btn variant-filled-surface flex-initial"
-        on:click={downloadJson}>
+<button type="button" class="btn variant-filled-surface flex-initial" on:click={downloadJson}>
     Export JSON
 </button>
