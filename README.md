@@ -34,7 +34,7 @@ npm run tauri build
 
 ## TODO
 
--   [x] Finish base features
+-   [ ] Fix Drag-n-Drop
 -   [x] Export edited data as JSON
 -   [x] Fix warnings
 -   [x] Fix MacOS support
@@ -43,3 +43,4 @@ npm run tauri build
     -   [x] MacOS Binary
     -   [ ] Windows Binary
 -   [ ] Fix "cuisine" selection
+-   [ ] Auto-Scroll to top after pressing previous/next
