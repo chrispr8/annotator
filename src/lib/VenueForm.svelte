@@ -127,6 +127,7 @@
                         <option value="unknown">unknown</option>
                         <option value="yes">yes</option>
                         <option value="no">no</option>
+                        <option value="limited">limited</option>
                     </select>
                 </label>
                 <label class="label">
@@ -135,6 +136,7 @@
                         <option value="unknown">unknown</option>
                         <option value="yes">yes</option>
                         <option value="no">no</option>
+                        <option value="limited">limited</option>
                     </select>
                 </label>
                 <label class="label">
