@@ -1,8 +1,9 @@
 # Annotator
 
-An annotator to enrich our OpenStreetMap data manually for the [knowledge base]().
+An annotator to enrich our OpenStreetMap data manually for the knowledge base (to be published).
 
 ## Installation
+
 ### Download binary
 
 You can (soon) find built binaries under [Releases](https://github.com/chrispr8/annotator/releases).
@@ -10,19 +11,18 @@ You can (soon) find built binaries under [Releases](https://github.com/chrispr8/
 ### Development
 
 **Setup**
-- Install [Tauri](https://tauri.app/v1/guides/getting-started/prerequisites) for you OS.
-- Install [NodeJS](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
 
+-   Install [Tauri](https://tauri.app/v1/guides/getting-started/prerequisites) for you OS.
+-   Install [NodeJS](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
 
-- In the project root run
+-   In the project root run
     ```
     npm install
-    npm run dev  # for development in the browser
+    npm run dev # for development in the browser
     # or
     npm run tauri dev
     ```
-Keep in mind that not all features are available in the browser.
-
+    Keep in mind that not all features are available in the browser.
 
 **Building**
 
@@ -34,9 +34,12 @@ npm run tauri build
 
 ## TODO
 
-- [ ] 
-- [ ] Export edited data as JSON
-- [ ] Fix warnings
-- [ ] Fix MacOS support
-- [ ] Fix Windows support
-- [ ] Build binaries
+-   [x] Finish base features
+-   [x] Export edited data as JSON
+-   [x] Fix warnings
+-   [x] Fix MacOS support
+-   [ ] Build binaries and publish under Releases
+    -   [x] Linux Binary
+    -   [x] MacOS Binary
+    -   [ ] Windows Binary
+-   [ ] Fix "cuisine" selection
