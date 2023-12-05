@@ -3,6 +3,7 @@
 	import { AppBar, AppShell, LightSwitch, ProgressBar, getModalStore, initializeStores, Modal} from "@skeletonlabs/skeleton"
 	import type {  ModalSettings } from "@skeletonlabs/skeleton"
 	import { dataStore, editCount, itemCount } from "../store"
+	import ExportData from "$lib/ExportData.svelte";
 
 	initializeStores()
 	const modal: ModalSettings = {
@@ -32,6 +33,7 @@
 		</svelte:fragment>
 		<div slot="trail" class="flex space-x-8">
 			{#if ($dataStore.length > 0)}
+				<ExportData/>
 				<button type="button" 
 						class="btn variant-filled-error flex-initial"
 						on:click={handleClearData}
