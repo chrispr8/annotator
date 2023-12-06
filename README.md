@@ -1,6 +1,6 @@
 # Annotator
 
-An annotator to enrich our OpenStreetMap data manually for the knowledge base (to be published).
+An annotator to enrich our OpenStreetMap data manually for a knowledge base that is part of a bigger project published Q1 24.
 
 ## Installation
 
@@ -34,13 +34,13 @@ npm run tauri build
 
 ## TODO
 
-- [ ] Fix Drag-n-Drop
 - [x] Export edited data as JSON
 - [x] Fix warnings
 - [x] Fix MacOS support
+- [x] Auto-Scroll to top after pressing previous/next
 - [ ] Build binaries and publish under Releases
   - [x] Linux Binary
   - [x] MacOS Binary
   - [ ] Windows Binary
-- [ ] Fix "cuisine" selection
-- [x] Auto-Scroll to top after pressing previous/next
+- [ ] Fix Drag-n-Drop
+- [ ] Fix "cuisine" selection (Major refactoring)
