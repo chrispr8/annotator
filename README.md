@@ -43,4 +43,4 @@ npm run tauri build
     -   [x] MacOS Binary
     -   [ ] Windows Binary
 -   [ ] Fix "cuisine" selection
--   [ ] Auto-Scroll to top after pressing previous/next
+-   [x] Auto-Scroll to top after pressing previous/next

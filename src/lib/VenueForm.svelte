@@ -13,6 +13,7 @@
                 return current - 1
             }
         })
+        scrollToTop()
     }
 
     const handleNext = () => {
@@ -24,6 +25,14 @@
                 return current + 1
             }
         })
+        scrollToTop()
+    }
+
+    const scrollToTop = () => {
+        let page = document.getElementById("page")
+        if (page) {
+            page.scrollTo(0, 0)
+        }
     }
 
     const openLink = () => {
@@ -110,59 +119,63 @@
                     <div class="space-y-2">
                         <span>Cuisine</span>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox" bind:checked={$dataStore[$currentIndex].cuisine.african}/>
+                            <input
+                                class="checkbox"
+                                type="checkbox"
+                                bind:checked={$dataStore[$currentIndex].cuisine.african}
+                            />
                             <p>🇬🇭 African</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox"/>
+                            <input class="checkbox" type="checkbox" />
                             <p>🍔 American</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox"/>
+                            <input class="checkbox" type="checkbox" />
                             <p>🍜 Asian</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox"/>
+                            <input class="checkbox" type="checkbox" />
                             <p>🇨🇳 Chinese</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox"/>
+                            <input class="checkbox" type="checkbox" />
                             <p>🇩🇪 German</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox"/>
+                            <input class="checkbox" type="checkbox" />
                             <p>🇬🇷 Greek</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox"/>
+                            <input class="checkbox" type="checkbox" />
                             <p>🇮🇳 Indian</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox"/>
+                            <input class="checkbox" type="checkbox" />
                             <p>🌐 International</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox"/>
+                            <input class="checkbox" type="checkbox" />
                             <p>🍕 Italian</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox"/>
+                            <input class="checkbox" type="checkbox" />
                             <p>🇯🇵 Japanese</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox"/>
+                            <input class="checkbox" type="checkbox" />
                             <p>🇰🇷 Korean</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox"/>
+                            <input class="checkbox" type="checkbox" />
                             <p>🌴 Oriental</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox"/>
+                            <input class="checkbox" type="checkbox" />
                             <p>🍣 Sushi</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox"/>
+                            <input class="checkbox" type="checkbox" />
                             <p>🇹🇭 Thai</p>
                         </label>
                     </div>
