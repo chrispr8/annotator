@@ -1,7 +1,22 @@
 {
   "data": [
     {
-      "cuisine": "burger",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -22,7 +37,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -43,7 +73,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -64,7 +109,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "german;regional",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": true,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -85,7 +145,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -106,7 +181,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -127,7 +217,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "asian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": true,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -148,7 +253,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -169,7 +289,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -190,7 +325,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "greek",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": true,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -211,7 +361,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -232,7 +397,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "thai",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": true
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -253,7 +433,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -274,7 +469,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "pizza",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -295,7 +505,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -316,7 +541,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "indian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": true,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -337,7 +577,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "indian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": true,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -358,7 +613,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -379,7 +649,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -400,7 +685,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "greek",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": true,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -421,7 +721,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -442,7 +757,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "chinese",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": true,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -463,7 +793,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -484,7 +829,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "german",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": true,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -505,7 +865,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -526,7 +901,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "greek",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": true,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -547,7 +937,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -568,7 +973,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "international",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": true,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -589,7 +1009,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "peruvian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -610,7 +1045,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "chinese",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": true,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -631,7 +1081,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "indian;iranian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": true,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -652,7 +1117,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -673,7 +1153,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "german",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": true,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -694,7 +1189,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -715,7 +1225,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "moroccan",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -736,7 +1261,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -757,7 +1297,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "german",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": true,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -778,7 +1333,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "german",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": true,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -799,7 +1369,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "german",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": true,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -820,7 +1405,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "vietnamese",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -841,7 +1441,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -862,7 +1477,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -883,7 +1513,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "eritrean;ethiopian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -904,7 +1549,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "pizza",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -925,7 +1585,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -946,7 +1621,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -967,7 +1657,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "spanish",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -988,7 +1693,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1009,7 +1729,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "sushi",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": true,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1030,7 +1765,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "african",
+      "cuisine": {
+        "african": true,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1051,7 +1801,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1072,7 +1837,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1093,7 +1873,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1114,7 +1909,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "pizza",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1135,7 +1945,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1156,7 +1981,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "regional",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1177,7 +2017,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "burger",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1198,7 +2053,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1219,7 +2089,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1240,7 +2125,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "pizza",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1261,7 +2161,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1282,7 +2197,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "cafe;ice_cream;italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "no",
       "description": "unknown",
       "edited": false,
@@ -1303,7 +2233,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "indian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": true,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1324,7 +2269,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "regional;seafood",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1345,7 +2305,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1366,7 +2341,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "pizza",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1387,7 +2377,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1408,7 +2413,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1429,7 +2449,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1450,7 +2485,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1471,7 +2521,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "spanish",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1492,7 +2557,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "burger",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1513,7 +2593,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "sushi",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": true,
+        "thai": false
+      },
       "delivery": "yes",
       "description": "unknown",
       "edited": false,
@@ -1534,7 +2629,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "Thai",
       "edited": false,
@@ -1555,7 +2665,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "italian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": true,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1576,7 +2701,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1597,7 +2737,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1618,7 +2773,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1639,7 +2809,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "burger",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1660,7 +2845,22 @@
       "wheelchair": "yes"
     },
     {
-      "cuisine": "spanish",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1681,7 +2881,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "empanada",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1702,7 +2917,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "japanese",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": true,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1723,7 +2953,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "georgian",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1744,7 +2989,22 @@
       "wheelchair": "no"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1765,7 +3025,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1786,7 +3061,22 @@
       "wheelchair": "unknown"
     },
     {
-      "cuisine": "unknown",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
@@ -1807,7 +3097,22 @@
       "wheelchair": "limited"
     },
     {
-      "cuisine": "pizza",
+      "cuisine": {
+        "african": false,
+        "american": false,
+        "asian": false,
+        "chinese": false,
+        "german": false,
+        "greek": false,
+        "indian": false,
+        "international": false,
+        "italian": false,
+        "japanese": false,
+        "korean": false,
+        "oriental": false,
+        "sushi": false,
+        "thai": false
+      },
       "delivery": "unknown",
       "description": "unknown",
       "edited": false,
