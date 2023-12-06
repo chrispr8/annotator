@@ -19,20 +19,22 @@ type Suburb = "Altstadt" |
               "Wieblingen" | 
               "Ziegelhausen"
 
-type Cuisine = "african" |
-               "american" |
-               "asian" |
-               "chinese" |
-               "german" |
-               "greek" |
-               "indian" |
-               "international" |
-               "italian" |
-               "japanese" |
-               "korean" |
-               "oriental" |
-               "sushi" |
-               "thai"
+type Cuisine = {
+    african: boolean,
+    american: boolean,
+    asian: boolean,
+    chinese: boolean,
+    german: boolean,
+    greek: boolean,
+    indian: boolean,
+    international: boolean,
+    italian: boolean,
+    japanese: boolean,
+    korean: boolean,
+    oriental: boolean,
+    sushi: boolean,
+    thai: boolean,
+}
 
 // Declare venue type for data import and manipulation
 export type Venue = {
@@ -44,7 +46,7 @@ export type Venue = {
     suburb: Suburb,
     phone: string,
     website: string,
-    cuisine?: Cuisine[],
+    cuisine?: Cuisine,
     delivery?: "yes" | "no" | "unknown",
     indoor_seating?: "yes" | "no" | "limited" | "unknown",
     internet_access?: "yes" | "no" | "unknown",

@@ -29,6 +29,9 @@
     const openLink = () => {
         open(`https://www.google.com/maps?q=${$currentVenue.name},Heidelberg`)
     }
+
+    // Debug
+    $: console.log($currentVenue.cuisine)
 </script>
 
 <div class="flex justify-center p-8 h-screen">
@@ -102,17 +105,68 @@
                 </select>
             </label>
             {#if $currentVenue.type == "restaurant"}
-                <label class="label">
-                    <span>Cuisine</span>
-                    <select class="select" value={$currentVenue.cuisine}>
-                        <!-- TODO: fix options -->
-                        <option value="unknown"></option>
-                        <option value="cheap">cheap</option>
-                        <option value="moderate">moderate</option>
-                        <option value="expensive">expensive</option>
-                        <option value="free">free</option>
-                    </select>
-                </label>
+                <!-- TODO: Refactor. Its getting a bit ugly-->
+                {#if $currentVenue.cuisine}
+                    <div class="space-y-2">
+                        <span>Cuisine</span>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox" bind:checked={$dataStore[$currentIndex].cuisine.african}/>
+                            <p>🇬🇭 African</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox"/>
+                            <p>🍔 American</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox"/>
+                            <p>🍜 Asian</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox"/>
+                            <p>🇨🇳 Chinese</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox"/>
+                            <p>🇩🇪 German</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox"/>
+                            <p>🇬🇷 Greek</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox"/>
+                            <p>🇮🇳 Indian</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox"/>
+                            <p>🌐 International</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox"/>
+                            <p>🍕 Italian</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox"/>
+                            <p>🇯🇵 Japanese</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox"/>
+                            <p>🇰🇷 Korean</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox"/>
+                            <p>🌴 Oriental</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox"/>
+                            <p>🍣 Sushi</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox"/>
+                            <p>🇹🇭 Thai</p>
+                        </label>
+                    </div>
+                {/if}
                 <label class="label">
                     <span>Delivery</span>
                     <select class="select" bind:value={$currentVenue.delivery}>
@@ -162,11 +216,11 @@
                     <span>Stars</span>
                     <select class="select" value={$currentVenue.stars}>
                         <option value="unknown">unknown</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
+                        <option value="1">⭐</option>
+                        <option value="2">⭐⭐</option>
+                        <option value="3">⭐⭐⭐</option>
+                        <option value="4">⭐⭐⭐⭐</option>
+                        <option value="5">⭐⭐⭐⭐⭐</option>
                     </select>
                 </label>
                 <!--{:else if $currentVenue.type =="attraction"}-->
