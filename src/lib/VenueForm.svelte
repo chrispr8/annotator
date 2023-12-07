@@ -1,30 +1,130 @@
 <script lang="ts">
     import { open } from "@tauri-apps/api/shell"
     import { currentIndex, currentVenue, dataStore, itemCount } from "../store"
-    import type { Venue } from "../store"
+    import type { Cuisine, Venue } from "../store"
     import { onMount } from "svelte"
 
-    const handlePrevious = () => {
-        $dataStore[$currentIndex].edited = true
-        currentIndex.update((current) => {
-            if (current == 0) {
-                return $itemCount - 1
-            } else {
-                return current - 1
-            }
-        })
-        scrollToTop()
+    let venue: Venue = {
+        type: "restaurant",
+        name: "",
+        description: "",
+        price: "cheap",
+        housenumber: "",
+        street: "",
+        suburb: "Altstadt",
+        phone: "",
+        website: "",
+        edited: false
     }
 
-    const handleNext = () => {
-        $dataStore[$currentIndex].edited = true
-        currentIndex.update((current) => {
-            if (current == $itemCount - 1) {
-                return 0
-            } else {
-                return current + 1
+    let default_cuisine: Cuisine = {
+        african: false,
+        american: false,
+        asian: false,
+        chinese: false,
+        german: false,
+        greek: false,
+        indian: false,
+        international: false,
+        italian: false,
+        japanese: false,
+        korean: false,
+        oriental: false,
+        sushi: false,
+        thai: false
+    }
+
+    // Somehow we cannot bind to booleans inside objects (TypeError: Attempted to assign to readonly property.)
+    // Thats why we need this beautiful list and all the functions to handle this mess.
+    let african = false
+    let american = false
+    let asian = false
+    let chinese = false
+    let german = false
+    let greek = false
+    let indian = false
+    let international = false
+    let italian = false
+    let japanese = false
+    let korean = false
+    let oriental = false
+    let sushi = false
+    let thai = false
+
+    onMount(() => {
+        updateVenue()
+    })
+
+    const saveVenue = () => {
+        if (venue.type == "restaurant") {
+            venue.cuisine = {
+                african,
+                american,
+                asian,
+                chinese,
+                german,
+                greek,
+                indian,
+                international,
+                italian,
+                japanese,
+                korean,
+                oriental,
+                sushi,
+                thai
             }
-        })
+        }
+        $dataStore[$currentIndex] = venue
+    }
+
+    // I mean it works... but WHY?!
+    const updateCuisine = () => {
+        african = $currentVenue.cuisine ? $currentVenue.cuisine.african : false
+        american = $currentVenue.cuisine ? $currentVenue.cuisine.american : false
+        asian = $currentVenue.cuisine ? $currentVenue.cuisine.asian : false
+        chinese = $currentVenue.cuisine ? $currentVenue.cuisine.chinese : false
+        german = $currentVenue.cuisine ? $currentVenue.cuisine.german : false
+        greek = $currentVenue.cuisine ? $currentVenue.cuisine.greek : false
+        indian = $currentVenue.cuisine ? $currentVenue.cuisine.indian : false
+        international = $currentVenue.cuisine ? $currentVenue.cuisine.international : false
+        italian = $currentVenue.cuisine ? $currentVenue.cuisine.italian : false
+        japanese = $currentVenue.cuisine ? $currentVenue.cuisine.japanese : false
+        korean = $currentVenue.cuisine ? $currentVenue.cuisine.korean : false
+        oriental = $currentVenue.cuisine ? $currentVenue.cuisine.oriental : false
+        sushi = $currentVenue.cuisine ? $currentVenue.cuisine.sushi : false
+        thai = $currentVenue.cuisine ? $currentVenue.cuisine.thai : false
+    }
+
+    const updateVenue = () => {
+        venue = $currentVenue
+        if ($currentVenue.type == "restaurant") {
+            updateCuisine()
+        }
+    }
+
+    const handleNext = (increase: boolean) => {
+        venue.edited = true
+        saveVenue()
+
+        if (increase) {
+            currentIndex.update((current) => {
+                if (current == $itemCount - 1) {
+                    return 0
+                } else {
+                    return current + 1
+                }
+            })
+        } else {
+            currentIndex.update((current) => {
+                if (current == 0) {
+                    return $itemCount - 1
+                } else {
+                    return current - 1
+                }
+            })
+        }
+
+        updateVenue()
         scrollToTop()
     }
 
@@ -49,21 +149,21 @@
     >
         <header class="header">
             <button class="h3" on:click={openLink}>
-                {$currentVenue.name}
+                {venue.name}
             </button>
         </header>
         <div class="flex-1 p-4">
             <label class="label">
                 <span>Street</span>
-                <input class="input" type="text" bind:value={$currentVenue.street} />
+                <input class="input" type="text" bind:value={venue.street} />
             </label>
             <label class="label">
                 <span>Housenumber</span>
-                <input class="input" type="text" bind:value={$currentVenue.housenumber} />
+                <input class="input" type="text" bind:value={venue.housenumber} />
             </label>
             <label class="label">
                 <span>Suburb</span>
-                <select class="select" bind:value={$currentVenue.suburb}>
+                <select class="select" bind:value={venue.suburb}>
                     <option value="unknown">unknown</option>
                     <option value="Altstadt">Altstadt</option>
                     <option value="Bahnstadt">Bahnstadt</option>
@@ -84,19 +184,19 @@
             </label>
             <label class="label">
                 <span>Description</span>
-                <textarea class="textarea" rows="3" bind:value={$currentVenue.description} />
+                <textarea class="textarea" rows="3" bind:value={venue.description} />
             </label>
             <label class="label">
                 <span>Website</span>
-                <input class="input" type="text" bind:value={$currentVenue.website} />
+                <input class="input" type="text" bind:value={venue.website} />
             </label>
-            <label class="label" for={$currentVenue.phone}>
+            <label class="label" for={venue.phone}>
                 <span>Phone</span>
-                <input class="input" type="text" bind:value={$currentVenue.phone} />
+                <input class="input" type="text" bind:value={venue.phone} />
             </label>
             <label class="label">
                 <span>Price</span>
-                <select class="select" value={$currentVenue.price}>
+                <select class="select" value={venue.price}>
                     <option value="unknown">unknown</option>
                     <option value="cheap">cheap</option>
                     <option value="moderate">moderate</option>
@@ -106,76 +206,71 @@
             </label>
             <label class="label">
                 <span>Wheelchair</span>
-                <select class="select" value={$currentVenue.wheelchair}>
+                <select class="select" value={venue.wheelchair}>
                     <option value="unknown">unknown</option>
                     <option value="yes">yes</option>
                     <option value="no">no</option>
                     <option value="limited">limited</option>
                 </select>
             </label>
-            {#if $currentVenue.type == "restaurant"}
-                <!-- TODO: Refactor. Its getting a bit ugly-->
-                {#if $currentVenue.cuisine}
+            {#if venue.type == "restaurant"}
+                {#if venue.cuisine}
                     <div class="space-y-2">
                         <span>Cuisine</span>
                         <label class="flex items-center space-x-2">
-                            <input
-                                class="checkbox"
-                                type="checkbox"
-                                bind:checked={$dataStore[$currentIndex].cuisine.african}
-                            />
+                            <input class="checkbox" type="checkbox" bind:checked={african} />
                             <p>🇬🇭 African</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox" />
+                            <input class="checkbox" type="checkbox" bind:checked={american} />
                             <p>🍔 American</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox" />
+                            <input class="checkbox" type="checkbox" bind:checked={asian} />
                             <p>🍜 Asian</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox" />
+                            <input class="checkbox" type="checkbox" bind:checked={chinese} />
                             <p>🇨🇳 Chinese</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox" />
+                            <input class="checkbox" type="checkbox" bind:checked={german} />
                             <p>🇩🇪 German</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox" />
+                            <input class="checkbox" type="checkbox" bind:checked={greek} />
                             <p>🇬🇷 Greek</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox" />
+                            <input class="checkbox" type="checkbox" bind:checked={indian} />
                             <p>🇮🇳 Indian</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox" />
+                            <input class="checkbox" type="checkbox" bind:checked={international} />
                             <p>🌐 International</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox" />
+                            <input class="checkbox" type="checkbox" bind:checked={italian} />
                             <p>🍕 Italian</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox" />
+                            <input class="checkbox" type="checkbox" bind:checked={japanese} />
                             <p>🇯🇵 Japanese</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox" />
+                            <input class="checkbox" type="checkbox" bind:checked={korean} />
                             <p>🇰🇷 Korean</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox" />
+                            <input class="checkbox" type="checkbox" bind:checked={oriental} />
                             <p>🌴 Oriental</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox" />
+                            <input class="checkbox" type="checkbox" bind:checked={sushi} />
                             <p>🍣 Sushi</p>
                         </label>
                         <label class="flex items-center space-x-2">
-                            <input class="checkbox" type="checkbox" />
+                            <input class="checkbox" type="checkbox" bind:checked={thai} />
                             <p>🇹🇭 Thai</p>
                         </label>
                     </div>
@@ -243,7 +338,7 @@
             <button
                 type="button"
                 class="btn variant-filled-surface rounded-md justify-left"
-                on:click={handlePrevious}
+                on:click={() => handleNext(false)}
             >
                 Previous
             </button>
@@ -259,7 +354,7 @@
             <button
                 type="button"
                 class="btn variant-filled-success rounded-md justify-right"
-                on:click={handleNext}
+                on:click={() => handleNext(true)}
             >
                 Next
             </button>

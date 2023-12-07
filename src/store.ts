@@ -19,7 +19,7 @@ type Suburb = "Altstadt" |
               "Wieblingen" | 
               "Ziegelhausen"
 
-type Cuisine = {
+export type Cuisine = {
     african: boolean,
     american: boolean,
     asian: boolean,
