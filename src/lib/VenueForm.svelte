@@ -140,7 +140,7 @@
     }
 
     // Debug
-    $: console.log($currentVenue.cuisine)
+    $: console.log(venue.price)
 </script>
 
 <div class="flex justify-center p-8">
@@ -196,7 +196,7 @@
             </label>
             <label class="label">
                 <span>Price</span>
-                <select class="select" value={venue.price}>
+                <select class="select" bind:value={venue.price}>
                     <option value="unknown">unknown</option>
                     <option value="cheap">cheap</option>
                     <option value="moderate">moderate</option>
@@ -206,7 +206,7 @@
             </label>
             <label class="label">
                 <span>Wheelchair</span>
-                <select class="select" value={venue.wheelchair}>
+                <select class="select" bind:value={venue.wheelchair}>
                     <option value="unknown">unknown</option>
                     <option value="yes">yes</option>
                     <option value="no">no</option>
@@ -277,7 +277,7 @@
                 {/if}
                 <label class="label">
                     <span>Delivery</span>
-                    <select class="select" bind:value={$currentVenue.delivery}>
+                    <select class="select" bind:value={venue.delivery}>
                         <option value="unknown">unknown</option>
                         <option value="yes">yes</option>
                         <option value="no">no</option>
@@ -285,7 +285,7 @@
                 </label>
                 <label class="label">
                     <span>Indoor seating</span>
-                    <select class="select" bind:value={$currentVenue.indoor_seating}>
+                    <select class="select" bind:value={venue.indoor_seating}>
                         <option value="unknown">unknown</option>
                         <option value="yes">yes</option>
                         <option value="no">no</option>
@@ -294,7 +294,7 @@
                 </label>
                 <label class="label">
                     <span>Outdoor seating</span>
-                    <select class="select" value={$currentVenue.outdoor_seating}>
+                    <select class="select" bind:value={venue.outdoor_seating}>
                         <option value="unknown">unknown</option>
                         <option value="yes">yes</option>
                         <option value="no">no</option>
@@ -303,7 +303,7 @@
                 </label>
                 <label class="label">
                     <span>Vegetarian</span>
-                    <select class="select" value={$currentVenue.vegetarian}>
+                    <select class="select" bind:value={venue.vegetarian}>
                         <option value="unknown">unknown</option>
                         <option value="yes">yes</option>
                         <option value="no">no</option>
@@ -312,7 +312,7 @@
                 </label>
                 <label class="label">
                     <span>Vegan</span>
-                    <select class="select" value={$currentVenue.vegan}>
+                    <select class="select" bind:value={venue.vegan}>
                         <option value="unknown">unknown</option>
                         <option value="yes">yes</option>
                         <option value="no">no</option>
@@ -322,7 +322,7 @@
             {:else if $currentVenue.type == "hotel"}
                 <label class="label">
                     <span>Stars</span>
-                    <select class="select" value={$currentVenue.stars}>
+                    <select class="select" bind:value={venue.stars}>
                         <option value="unknown">unknown</option>
                         <option value="1">⭐</option>
                         <option value="2">⭐⭐</option>
