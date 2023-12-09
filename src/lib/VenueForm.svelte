@@ -155,11 +155,11 @@
         <div class="flex-1 p-4">
             <label class="label">
                 <span>Street</span>
-                <input class="input" type="text" bind:value={venue.street} />
+                <input class="input select-all" type="text" bind:value={venue.street} />
             </label>
             <label class="label">
                 <span>Housenumber</span>
-                <input class="input" type="text" bind:value={venue.housenumber} />
+                <input class="input select-all" type="text" bind:value={venue.housenumber} />
             </label>
             <label class="label">
                 <span>Suburb</span>
@@ -184,15 +184,15 @@
             </label>
             <label class="label">
                 <span>Description</span>
-                <textarea class="textarea" rows="3" bind:value={venue.description} />
+                <textarea class="textarea select-all" rows="3" bind:value={venue.description} />
             </label>
             <label class="label">
                 <span>Website</span>
-                <input class="input" type="text" bind:value={venue.website} />
+                <input class="input select-all" type="text" bind:value={venue.website} />
             </label>
             <label class="label" for={venue.phone}>
                 <span>Phone</span>
-                <input class="input" type="text" bind:value={venue.phone} />
+                <input class="input select-all" type="text" bind:value={venue.phone} />
             </label>
             <label class="label">
                 <span>Price</span>
