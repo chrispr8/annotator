@@ -215,7 +215,7 @@
             </label>
             {#if venue.type == "restaurant"}
                 {#if venue.cuisine}
-                    <div class="space-y-2">
+                    <div class="space-y-2 grid grid-cols-3">
                         <span>Cuisine</span>
                         <label class="flex items-center space-x-2">
                             <input class="checkbox" type="checkbox" bind:checked={african} />
