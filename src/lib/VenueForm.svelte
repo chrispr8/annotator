@@ -347,6 +347,8 @@
                 class="btn variant-filled-error rounded-md justify-between"
                 on:click={() => {
                     $dataStore = $dataStore.filter((_, i) => i != $currentIndex)
+                    updateVenue()
+                    scrollToTop()
                 }}
             >
                 Delete
