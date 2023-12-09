@@ -143,13 +143,13 @@
     $: console.log($currentVenue.cuisine)
 </script>
 
-<div class="flex justify-center p-8 h-screen">
+<div class="flex justify-center p-8">
     <div
         class="w-full sm:w-2/3 p-8 rounded-lg justify-content shadow-md transition-all duration-300 ease-in-out whitespace-pre-wrap"
     >
         <header class="header">
             <button class="h3" on:click={openLink}>
-                {venue.name}
+                <u>{venue.name}</u>
             </button>
         </header>
         <div class="flex-1 p-4">
