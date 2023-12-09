@@ -38,9 +38,10 @@ npm run tauri build
 - [x] Fix warnings
 - [x] Fix MacOS support
 - [x] Auto-Scroll to top after pressing previous/next
+- [x] Fix "cuisine" selection
 - [ ] Build binaries and publish under Releases
   - [x] Linux Binary
   - [x] MacOS Binary
-  - [ ] Windows Binary
+  - [x] Windows Binary
 - [ ] Fix Drag-n-Drop
-- [ ] Fix "cuisine" selection (Major refactoring)
+
