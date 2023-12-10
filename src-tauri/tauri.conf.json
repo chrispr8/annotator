@@ -15,6 +15,15 @@
       "all": false,
       "shell": {
         "open": true
+      },
+      "dialog": {
+        "all": true
+      },
+      "fs": {
+        "all": true
+      },
+      "path": {
+        "all": true
       }
     },
     "bundle": {
