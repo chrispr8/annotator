@@ -1,19 +1,19 @@
 <script lang="ts">
     import { dataStore } from "../store"
     import { save } from "@tauri-apps/api/dialog"
-    import { downloadDir} from "@tauri-apps/api/path"
+    import { downloadDir } from "@tauri-apps/api/path"
     import { writeTextFile } from "@tauri-apps/api/fs"
 
-    const downloadJson = async() => {
+    const downloadJson = async () => {
         const suggestedFilename = "export.json"
-        const jsonString = JSON.stringify($dataStore, null, 2)
+        const jsonString = JSON.stringify({ data: $dataStore }, null, 2)
 
         try {
             const filePath = await save({
-                defaultPath: (await downloadDir()) + "/" + suggestedFilename,
+                defaultPath: (await downloadDir()) + "/" + suggestedFilename
             })
-            await writeTextFile({contents: jsonString, path: filePath})
-        } catch(e) {
+            await writeTextFile({ contents: jsonString, path: filePath })
+        } catch (e) {
             console.error(e)
         }
     }
