@@ -36,6 +36,20 @@ export type Cuisine = {
     thai: boolean,
 }
 
+export type Attraction_Type = {
+    active: boolean,
+    architecture: boolean, 
+    child_friendly: boolean,
+    educational: boolean,
+    historic: boolean,
+    indoor: boolean,
+    nature: boolean,
+    outdoor: boolean,
+    passive: boolean,
+    view: boolean,
+    zoo: boolean
+}
+
 // Declare venue type for data import and manipulation
 export type Venue = {
     type: "restaurant" | "hotel" | "attraction"
@@ -59,6 +73,7 @@ export type Venue = {
     stars?: "1" | "2" | "3" | "4" | "5" | "unknown",
     air_conditioning?: "yes" | "no" | "unknown",
     parking?: "yes" | "no" | "unknown",
+    attraction_type?: Attraction_Type,
     edited: boolean,
 }
 

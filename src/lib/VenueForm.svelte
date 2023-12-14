@@ -1,7 +1,7 @@
 <script lang="ts">
     import { open } from "@tauri-apps/api/shell"
     import { currentIndex, currentVenue, dataStore, itemCount } from "../store"
-    import type { Cuisine, Venue } from "../store"
+    import type { Attraction_Type, Cuisine, Venue } from "../store"
     import { onMount } from "svelte"
 
     let venue: Venue = {
@@ -51,6 +51,32 @@
     let sushi = false
     let thai = false
 
+    let default_attraction_type: Attraction_Type = {
+        active: false,
+        architecture: false,
+        child_friendly: false,
+        educational: false,
+        historic: false,
+        indoor: false,
+        nature: false,
+        outdoor: false,
+        passive: false,
+        view: false,
+        zoo: false
+    }
+
+    let active = false
+    let architecture = false
+    let child_friendly = false
+    let educational = false
+    let historic = false
+    let indoor = false
+    let nature = false
+    let outdoor = false
+    let passive = false
+    let view = false
+    let zoo = false
+
     onMount(() => {
         updateVenue()
     })
@@ -74,6 +100,21 @@
                 thai
             }
         }
+        if (venue.type == "attraction") {
+            venue.attraction_type = {
+                active,
+                architecture,
+                child_friendly,
+                educational,
+                historic,
+                indoor,
+                nature,
+                outdoor,
+                passive,
+                view,
+                zoo
+            }
+        }
         $dataStore[$currentIndex] = venue
     }
 
@@ -95,10 +136,33 @@
         thai = $currentVenue.cuisine ? $currentVenue.cuisine.thai : false
     }
 
+    const updateAttractionType = () => {
+        active = $currentVenue.attraction_type ? $currentVenue.attraction_type.active : false
+        architecture = $currentVenue.attraction_type
+            ? $currentVenue.attraction_type.architecture
+            : false
+        child_friendly = $currentVenue.attraction_type
+            ? $currentVenue.attraction_type.child_friendly
+            : false
+        educational = $currentVenue.attraction_type
+            ? $currentVenue.attraction_type.educational
+            : false
+        historic = $currentVenue.attraction_type ? $currentVenue.attraction_type.historic : false
+        indoor = $currentVenue.attraction_type ? $currentVenue.attraction_type.indoor : false
+        nature = $currentVenue.attraction_type ? $currentVenue.attraction_type.nature : false
+        outdoor = $currentVenue.attraction_type ? $currentVenue.attraction_type.outdoor : false
+        passive = $currentVenue.attraction_type ? $currentVenue.attraction_type.passive : false
+        view = $currentVenue.attraction_type ? $currentVenue.attraction_type.view : false
+        zoo = $currentVenue.attraction_type ? $currentVenue.attraction_type.zoo : false
+    }
+
     const updateVenue = () => {
         venue = $currentVenue
         if ($currentVenue.type == "restaurant") {
             updateCuisine()
+        }
+        if ($currentVenue.type == "attraction") {
+            updateAttractionType()
         }
     }
 
@@ -153,6 +217,10 @@
             </button>
         </header>
         <div class="flex-1 p-4">
+            <label class="label">
+                <span>Name</span>
+                <input class="input select-all" type="text" bind:value={venue.name} />
+            </label>
             <label class="label">
                 <span>Street</span>
                 <input class="input select-all" type="text" bind:value={venue.street} />
@@ -331,7 +399,56 @@
                         <option value="5">⭐⭐⭐⭐⭐</option>
                     </select>
                 </label>
-                <!--{:else if $currentVenue.type =="attraction"}-->
+            {:else if $currentVenue.type == "attraction"}
+                {#if venue.cuisine}
+                    <div class="space-y-2 grid grid-cols-2">
+                        <span>Attraction Type</span>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox" bind:checked={active} />
+                            <p>🏃 Active</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox" bind:checked={architecture} />
+                            <p>⛪️ Architecture</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox" bind:checked={child_friendly} />
+                            <p>👨‍👩‍👧‍👦 Child Friendly</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox" bind:checked={educational} />
+                            <p>📖 Educational</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox" bind:checked={historic} />
+                            <p>🏛 Historic</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox" bind:checked={indoor} />
+                            <p>🪟 Indoor</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox" bind:checked={nature} />
+                            <p>🌳 Nature</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox" bind:checked={outdoor} />
+                            <p>🏕 Outdoor</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox" bind:checked={passive} />
+                            <p>📺 Passive</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox" bind:checked={view} />
+                            <p>🌄 View</p>
+                        </label>
+                        <label class="flex items-center space-x-2">
+                            <input class="checkbox" type="checkbox" bind:checked={zoo} />
+                            <p>🐅 Zoo</p>
+                        </label>
+                    </div>
+                {/if}
             {/if}
         </div>
         <footer class="flex justify-between mt-4">
