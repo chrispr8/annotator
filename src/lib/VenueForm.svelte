@@ -202,9 +202,6 @@
     const openLink = () => {
         open(`https://www.google.com/maps?q=${$currentVenue.name},Heidelberg`)
     }
-
-    // Debug
-    $: console.log(venue.price)
 </script>
 
 <div class="flex justify-center p-8">
